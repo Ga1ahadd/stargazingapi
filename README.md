@@ -13,7 +13,7 @@ Endpoints permettant la création de compte et la connection
 - POST /auth/register : crée un utilisateur
 - POST /auth/login : se connecter avec un username et un password valides. Retourne un bearer token
 
-## Astronomes
+### Astronomes
 Endpoints permettant la gestion RUD des users/astronomes (le C est géré dans la partie Auth)
 - GET /astronomers/{id} récupère un astronome via son ID
 - GET /astronomers récupère tous les astronomes paginés
