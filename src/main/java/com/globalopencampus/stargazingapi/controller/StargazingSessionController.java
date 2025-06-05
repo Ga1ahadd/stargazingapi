@@ -34,6 +34,7 @@ public class StargazingSessionController {
 
     @Operation(summary = "récupèrer toutes les sessions d'observation")
     @PreAuthorize("hasRole('ROLE_ADMINISTRATOR') or hasRole('ROLE_MANAGER') or hasRole('ROLE_USER')")
+    @GetMapping
     public Page<StargazingSession> getAll(@RequestParam(defaultValue = "0") int page,
                                     @RequestParam(defaultValue = "10") int size) {
         Pageable pageable = PageRequest.of(page, size);
